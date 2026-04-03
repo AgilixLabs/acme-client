@@ -244,7 +244,8 @@ pub struct Challenge {
     pub r#type: ChallengeType,
     /// Challenge identifier
     pub url: String,
-    /// Token for this challenge
+    /// Token for this challenge (not present for dns-persist-01)
+    #[serde(default)]
     pub token: String,
     /// Current status
     pub status: ChallengeStatus,
