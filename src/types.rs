@@ -452,6 +452,8 @@ pub enum ChallengeType {
     Dns01,
     #[serde(rename = "tls-alpn-01")]
     TlsAlpn01,
+    #[serde(rename = "dns-persist-01")]
+    DnsPersist01,
 }
 
 #[derive(Clone, Copy, Debug, Deserialize)]
